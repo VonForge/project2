@@ -1,7 +1,9 @@
 body{
-  color: #ffffff;
+  font-family: cursive;
+  color: #ffdaa3f;
   font-size: 20px;
   line-size: 30px;
+  background-color: #d19130;
 }
 
 h1{
