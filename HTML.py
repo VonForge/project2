@@ -23,7 +23,7 @@ def login():
     </h1>
     <img src="Этот комьютер/Изображения/Plant_project_img_001" alt="" widht='400' height='500'> #если что src изменим
   </header>
-    <o>#Отсюда идёт парольная часть
+    <o>  #Отсюда идёт парольная часть
       <Pass-Log method='POST'>
         <div class='conteiner'>
           <label for='login'> <a> Login </a> </label>
@@ -31,8 +31,10 @@ def login():
 
           <label for='PassworD'> <a> Password </a> </label>
           <input type='password' name='Password'>
+
+          <button type='button' name ='Insert'><svg wight='70' height='30'></svg></button>
         </div>
-      </Pass-Log>#здесь пропороленное всё заканчивается
+      </Pass-Log>  #здесь пропороленное всё заканчивается
       <button type='button' name ='Vive_Monsis'>
           <svg wight='60' height='20'>
           </svg>
