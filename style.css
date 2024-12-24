@@ -7,11 +7,12 @@ body{
 }
 
 h1{
+  font-family: cursive;
   width: 300px;
   text-align: center;
   font-weidht: normal;
   font-size: 40px;
-  line-size: 60px;
+  line-height: 60px;
 }
 .site-header{
   width: 200px;
@@ -22,7 +23,6 @@ h1{
 }
 .conteiner{
   width: 230px;
-  margin: 0 auto;
   padding: 0 40px;
 }
 
