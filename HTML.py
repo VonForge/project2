@@ -23,17 +23,25 @@ def login():
     </h1>
     <img src="Этот комьютер/Изображения/Plant_project_img_001" alt="" widht='400' height='500'> #если что src изменим
   </header>
-    <o>
+    <o>#Отсюда идёт парольная часть
+      <Pass-Log method='POST'>
+        <div class='conteiner'>
+          <label for='login'> <a> Login </a> </label>
+          <input type='text'>
+
+          <label for='Password'> <a> Password </a> </label>
+        </div>
+      </Pass-Log>#здесь пропороленное всё заканчивается
       <button type='button' name ='Vive_Monsis'>
           <svg wight='60' height='20'>
           </svg>
-        Посмотреть устройства
-      </button> 
+        Посмотреть подключённые устройства
+      </button>
     </o>
 
     <p>
     </p>
-    <select class='Spisok'>
+    <select class='Spisok'>#Здесь должно будет выпадать список с состояние выбранного растения, номер/индификатор усройства
       <option value='GeneralCondition'>{condition_plant_new}</option>
       <option value='DeviceNumber'>{Number_device}</option>
     </select>
