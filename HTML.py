@@ -33,9 +33,9 @@ def login():
 
     <p>
     </p>
-    <select>
-      <option value='Generalcondition'>
-      <>
+    <select class='Spisok'>
+      <option value='GeneralCondition'>{condition_plant_new}</option>
+      <option value='DeviceNumber'>{Number_device}</option>
     </select>
   <footer>
     <p>Справочная информация
