@@ -29,7 +29,8 @@ def login():
           <label for='login'> <a> Login </a> </label>
           <input type='text'>
 
-          <label for='Password'> <a> Password </a> </label>
+          <label for='PassworD'> <a> Password </a> </label>
+          <input type='password' name='Password'>
         </div>
       </Pass-Log>#здесь пропороленное всё заканчивается
       <button type='button' name ='Vive_Monsis'>
