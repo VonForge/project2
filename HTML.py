@@ -23,10 +23,20 @@ def login():
     </h1>
     <img src="Этот комьютер/Изображения/Plant_project_imj_001" alt="" widht='400' height='500'> #если что src изменим
   </header>
-    <o  <button>Посмотреть устройства</button> /o>
+    <o>
+      <button type='button' name ='Vive_Monsis'>
+          <svg wight='60' height='20'>
+          </svg>
+        Посмотреть устройства
+      </button> 
+    </o>
 
     <p>
     </p>
+    <select>
+      <option value='Generalcondition'>
+      <>
+    </select>
   <footer>
     <p>Справочная информация
     </p>
