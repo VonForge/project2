@@ -1,6 +1,23 @@
+body{
+  color: #ffffff;
+  font-size: 20px;
+  line-size: 30px;
+}
 
-
-
+h1{
+  width: 300px;
+  text-align: center;
+  font-weidht: normal;
+  font-size: 40px;
+  line-size: 60px;
+}
+.site-header{
+  width: 200px;
+  height: 180px;
+  bacground: #f0db24;
+  margin-bottom: 100;
+  
+}
 
 
 
