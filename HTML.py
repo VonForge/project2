@@ -21,7 +21,7 @@ def login():
   <header class="site-header">
     <h1>Сайт системы "SisteMon"
     </h1>
-    <img src="Этот комьютер/Изображения/Plant_project_imj_001" alt="" widht='400' height='500'> #если что src изменим
+    <img src="Этот комьютер/Изображения/Plant_project_img_001" alt="" widht='400' height='500'> #если что src изменим
   </header>
     <o>
       <button type='button' name ='Vive_Monsis'>
