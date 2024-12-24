@@ -23,30 +23,26 @@ def login():
     <h1>Сайт системы "SisteMon"
     </h1>
     <img src="Этот комьютер/Изображения/Plant_project_img_001" alt="" widht='400' height='500'> #если что src изменим
+    <section class='BasicTools'>
+      <h3>Здесь дожны быть такие секции, как вернутся на начальную страницу, помотреть оповещения</h3>
+    <>/section>
   </header>
-
-  
     <o>  #Отсюда идёт парольная часть
       <Pass-Log method='POST'>
         <div class='conteiner'>
           <label for='login'> <a> Login </a> </label>
           <input type='text'>
-
           <label for='PassworD'> <a> Password </a> </label>
           <input type='password' name='Password'>
-
           <button type='button' name ='Insert'><svg wight='70' height='30'></svg></button>
         </div>
       </Pass-Log>  #здесь пропороленное всё заканчивается
-
-      
       <button type='button' name ='Vive_Monsis'>
           <svg wight='60' height='20'>
           </svg>
         Посмотреть подключённые устройства
       </button>
     </o>
-
     <p>
     </p>
     <select class='Spisok'>#Здесь должно будет выпадать список с состояние выбранного растения, номер/индификатор усройства
