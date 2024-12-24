@@ -1,4 +1,4 @@
-
+#ВООБЩЕ ЭТО АРДУИНО, А НЕ С++
 #define PIN_LED 10 
 #define PIN_PHOTO_SENSOR A0 
 #include <TroykaDHT.h> 
