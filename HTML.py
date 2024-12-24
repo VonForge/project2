@@ -10,7 +10,7 @@ def login():
 
 
 
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charaset="UTF-8">
