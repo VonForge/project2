@@ -24,6 +24,7 @@ h1{
   
 }
 .conteiner{
+  color: #ffffff;
   width: 230px;
   padding: 0 40px;
 }
@@ -31,11 +32,13 @@ h1{
 BasicTools{
   widht: 80px;
   height: 120px;
+  color: #ffffff;
 }
 
 Spisok{
   widht: 80px;
   height: 120px;
+  color: #ffffff;
 }
 
 
