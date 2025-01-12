@@ -1,50 +1,39 @@
-from flask import *
-inport sqlite3
-app = Flask(__name__)
-@app.route('/')
-def Privetstvie():
-  return 'Добро пожаловать'
-@app.route('/login')
-def login():
-  pass
-
-
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charaset="UTF-8">
   <title>Сайт системы "SisteMon"
   </title>
-  <link rel='stylesheet' href='{{url_for('static',filename='style.css')}}'>
+  <link rel='stylesheet' href='style.css'>
 </head>
 <body>
   <header class="site-header">
     <h1>Сайт системы "SisteMon"</h1>
-    <img src="Этот комьютер/Изображения/Plant_project_img_001" alt="" widht='400' height='500'> #если что src изменим
+    <img src="Этот комьютер/Изображения/Plant_project_img_001" alt="" widht='40' height='40'> #если что src изменим
     <section class='BasicTools'>
-      <h3>Здесь дожны быть такие секции, как вернутся на начальную страницу, помотреть оповещения</h3>
-    <>/section>
+      <h3>секции, как вернутся на начальную страницу,
+        помотреть оповещения</h3>
+    </section>
   </header>
-    <o>  #Отсюда идёт парольная часть
+    <o>
       <Pass-Log method='POST'>
         <div class='conteiner'>
           <label for='login'> <a> Login </a> </label>
           <input type='text'>
           <label for='PassworD'> <a> Password </a> </label>
           <input type='password' name='Password'>
-          <button type='button' name ='Insert'><svg wight='70' height='30'></svg></button>
+          <button type='button' name ='Insert'><svg wight='50' height='30'></svg></button>
         </div>
-      </Pass-Log>  #здесь пропороленное всё заканчивается
+      </Pass-Log>
       <button type='button' name ='Vive_Monsis'>
-          <svg wight='60' height='20'>
+          <svg wight='40' height='20'>
           </svg>
         Посмотреть подключённые устройства
       </button>
     </o>
     <p>
     </p>
-    <select class='Spisok'>#Здесь должно будет выпадать список с состояние выбранного растения, номер/индификатор усройства
+    <select class='List'>
       <option value='GeneralCondition'>{condition_plant_new}</option>
       <option value='DeviceNumber'>{Number_device}</option>
     </select>
@@ -54,5 +43,3 @@ def login():
   </footer>
 </body>
 </html>
-
-
