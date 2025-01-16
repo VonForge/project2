@@ -1,45 +1,192 @@
+
+html{
+  height: 100%;
+}
 body{
     font-family: cursive;
+    padding-left: 16px;
+    padding-right: 16px;
     color: #000000;
-    font-size: 30px;
-    line-size: 60px;
-    background-color: #d19130;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    background-color: rgb(208, 236, 255);
   }
-  
+  .main{
+    background-color: rgb(235, 255, 208);
+    margin-left: 160px;
+    margin-right: 0px;
+    height: 1000px;
+    width: 1400px;
+    margin-top: 180px;
+    border-radius: 5%;
+  }
+  .container1{
+    max-width: 200px;
+    margin: auto;
+    height: auto;
+    width: 900px;
+  }
   h1{
     font-family: cursive;
     width: 300px;
     text-align: center;
-    font-width: normal;
+    font-weight: normal;
     font-size: 40px;
     line-height: 60px;
   }
-  
+  .container {
+    margin: auto;
+    width: 900px;
+ }
+ .container-div1{
+  background-color: azure;
+  height: 400px;
+  width: 50%;
+  margin-left: 110px;
+ }
+ .container-div2{
+  margin-top: -400px;
+  margin-left: 65%;
+  background-color: rgb(255, 0, 187);
+  height: 400px;
+  width: 400px;
+ }
+
+
+
+
+
+
+
+ 
+/* Дальше данные ардуино */
+ .container-L{
+  display: grid;
+  margin-top: -690px;
+  margin-left: 200px;
+  background-color: rgb(0, 247, 255);
+  height: 40px;
+  width: 210px;
+ }
+ .container-VV{
+  margin-top: -90px;
+  margin-left: 200px;
+  background-color: rgb(255, 0, 187);
+  height: 40px;
+  width: 210px;
+ }
+ .container-VP{
+  margin-top: -90px;
+  margin-left: 200px;
+  background-color: rgb(122, 94, 0);
+  height: 40px;
+  width: 210px;
+ }
+ .container-TV{
+  margin-top: -90px;
+  margin-left: 200px;
+  background-color: rgb(255, 38, 0);
+  height: 40px;
+  width: 210px;
+ }
+
+
+/* Данные ардуино закончились */
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Рекомендованные начались */
+
+.container-TV-rec{
+  margin-top: -90px;
+  margin-left: 500px;
+  background-color: rgb(255, 38, 0);
+  height: 40px;
+  width: 210px;
+ }
+
+ .container-VP-rec{
+  margin-top: -90px;
+  margin-left: 500px;
+  background-color: rgb(122, 94, 0);
+  height: 40px;
+  width: 210px;
+ }
+ .container-VV-rec{
+  margin-top: -90px;
+  margin-left: 500px;
+  background-color: rgb(255, 0, 187);
+  height: 40px;
+  width: 210px;
+ }
+ 
+ .container-L-rec{
+  margin-top: 0px;
+  margin-left: 500px;
+  background-color: rgb(0, 247, 255);
+  height: 40px;
+  width: 210px;
+ }
+
+
+ /* Рекомендованные закончились */
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
   .site-header{
-    width: 200px;
-    height: 180px;
-    margin-bottom: 100;
-    
+    background-color: rgb(141, 214, 58);
+    text-align: center;
+    width: 1360px;
+    height: 300px;
+    margin-top: -10px;
+    margin-left: 180px;
+    border-radius: 0%;
+
   }
-  .conteiner{
+  .Pass-Log{
     color: #ffffff;
-    text-indent: 20;
     width: 30px;
     padding: 40px;
+    height: 200px;
+    margin-top: -27px;
+    margin-left: 0;
   }
   
   .BasicTools{
-    width: 80px;
-    height: 120px;
+    position: relative;
+    white-space: nowrap;
+    margin-top: 140px;
+    padding: 0px;
+    background-color: rgb(77, 77, 77);
+    width: 1360px;
+    height: 100px;
     color: #ffffff;
   }
-  
-  .List{
-    width: 80px;
-    height: 120px;
-    color: #ffffff;
+  .footer{
+    color:#000000;
+    padding-top: 30;
+    padding-bottom: 50;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    max-height: 10%;
+    background: #ffda95;
   }
-  footer{
-    color:#ffdaa3;
+  nav{
+    list-style: none;
+
   }
-  
+  .Log-Pas-But{
+    color: blue;
+
+  }
+
