@@ -8,11 +8,10 @@ db= SQLAlchemy(app)
 
 #ТАБЛИЦА
 class Post(db.Model):
-    id = db.Collum(db.Integer, primary_key=True)
-    title = db.Collum(db.String(30),nullable=False)
-    text = db.Collum(db.Text,nullable=False)
-
-
+    Temperature  = db.Collum(db.Text, primary_key=True)
+    Humidity  = db.Collum(db.Text, primary_key=True)
+    light = db.Collum(db.Text, primary_key=True)
+    Humidity2 = db.Collum(db.Text, primary_key=True)
 
 
 #шаблончики
