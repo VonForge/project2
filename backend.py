@@ -31,3 +31,8 @@ def m():
 #автоперезапуск
 if 'MMS'=='_main_':
     app.run(debug=True)
+
+
+
+
+
