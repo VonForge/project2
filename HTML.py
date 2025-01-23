@@ -7,34 +7,48 @@
 </head>
 <body>
   <div class="site-header">
-    <h1>"SisteMon"</h1>
-    <!--
-    <nav>
-        <ul class='BasicTools'>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="Pass-login.html">один конец</a></li>
-            <li><a href="User_Device.html">Устройства</a></li>
-            <li><a href="Шаблон.html">Шаблон</a></li>
-        </ul>
-    </nav>
-    -->
+    <h1><img src="Картинки/Название сайта на сером белым-Photoroom.png" width="800" height="200"></h1>
   </div>
   <mn>
-    <div class="main"></div>
+    <div class="main">
     <div class="block">
-      <div class="container-L">Освещённость </div>
-      <div class="container-VP">Влажность почвы</div>
-      <div class="container-VV">Влажность воздуха</div>
-      <div class="container-TV">Температура воздуха</div>>
+      <div class="container-L">
+        Освещённость(Ligt_Ard)
+      </div>
+      <div class="container-VP">
+        Влажность почвы(SoilHumidity_Ard)
+      </div>
+      <div class="container-VV">
+        Влажность воздуха(AirHumidity_Ard)
+      </div>
+      <div class="container-TV">
+        Температура воздуха(AirTemperature_Ard)
+      </div>
+      <div class="container-ind">
+        Индекс устройства: 0001-AAA
+      </div>
+      <div class="container-L-rec">
+        Освещённость график(Ligt_Rec)
+      </div>
+      <div class="container-VP-rec">
+        Влажность почвы график(SoilHumidity_Rec)
+      </div>
+      <div class="container-VV-rec">
+        Влажность воздуха график(AirHumidity_Rec)
+      </div>
+      <div class="container-TV-rec">
+        Температура воздуха график(AirTemperature_Rec)
+      </div>
+      <!-- выше это отображенние данных -->
+       <select class="List-Plant">
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+       </select>
+    </div>
     </div>
   </mn>
-  <mo>
-    <div class="container-L-rec">Освещённость график</div>
-    <div class="container-VP-rec">Влажность почвы график</div>
-    <div class="container-VV-rec">Влажность воздуха график</div>
-    <div class="container-TV-rec">Температура воздуха график</div>
-  </mo>
 </body>
 </html>
-
 
