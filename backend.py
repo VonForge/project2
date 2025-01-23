@@ -18,7 +18,7 @@ class Post(db.Model):
 @app.route('/main')
 @app.route('/')
 def m():
-    return('')
+    return render_template('index.html')
 
 @app.route('/acc')
 def a():
