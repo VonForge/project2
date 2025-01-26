@@ -37,16 +37,16 @@
         Температура воздуха {{AirTemperature_Ard}}!
       </div>
       <div class="container-L-rec">
-        Освещённость график {{Ligt_Rec}}!
+        Освещённость {{Ligt_Rec}}!
       </div>
       <div class="container-VP-rec">
-        Влажность почвы график {{SoilHumidity_Rec}}!
+        Влажность почвы {{SoilHumidity_Rec}}!
       </div>
       <div class="container-VV-rec">
-        Влажность воздуха график {{AirHumidity_Rec}}!
+        Влажность воздуха {{AirHumidity_Rec}}!
       </div>
       <div class="container-TV-rec">
-        Температура воздуха график {{AirTemperature_Rec}}!
+        Температура воздуха {{AirTemperature_Rec}}!
       </div>
       <!-- выше это отображенние данных -->
       
@@ -75,4 +75,3 @@
 </script>
 </body>
 </html>
-
