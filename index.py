@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="site-header">
-    <h1><img src="Картинки/Название сайта на сером белым-Photoroom.png" width="800" height="200"></h1>
+    <h1><img src="Картинки/Название сайта на сером белым.png" width="800" height="200"></h1>
   </div>
   <mn>
     <div class="main">
@@ -75,3 +75,4 @@
 </script>
 </body>
 </html>
+
