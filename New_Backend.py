@@ -1,9 +1,9 @@
 from flask import Flask
 import sqlite3
-def InSert(Nn, time, AirT, AirH, SoilH, Light):
-  cursor.execute('INSERT INTO BD_Plant (N, Time, AirTemperature_Ard, AirHumidity_Ard, SoilHumidity_Ard, Ligdt_Ard) VALUES (?, ?, ?, ?, ?, ?)', (Nn, time, AirT, AirH, SoilH, Light))
-def SelecT(nameST, n):
-  cursor.execute(f'SELECT Text FROM BD_text WHERE id = ?', (n,))
+def InSert(Nn, Time, AirT, AirH, SoilH, Light):
+  cursor.execute('INSERT INTO BD_Plant (N, Time, AirTemperature_Ard, AirHumidity_Ard, SoilHumidity_Ard, Ligdt_Ard) VALUES (?, ?, ?, ?, ?, ?)', (Nn, Time, AirT, AirH, SoilH, Light))
+def SelecT(Num):
+  cursor.execute(f'SELECT Text FROM BD_text WHERE id = ?', (Num,))
   DANN = cursor.fetchall()
   return DANN
 
