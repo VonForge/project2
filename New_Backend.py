@@ -30,21 +30,6 @@ Ligdt_Ard REAL NOT NULL,
 )
 ''')
 
-'''
-cursor.execute('INSERT INTO Users (username, email, age) VALUES (?, ?, ?)', ('newuser', 'newuser@example.com', 28))
-# Обновляем возраст пользователя "newuser"
-cursor.execute('UPDATE Users SET age = ? WHERE username = ?', (29, 'newuser'))
-cursor.execute('DELETE FROM Users WHERE username = ?', ('newuser',))
-'''
-
-'''
-# Выбираем имена и возраст пользователей старше 25 лет
-cursor.execute('SELECT username, age FROM Users WHERE age > ?', (25,))
-results = cursor.fetchall()
-
-for row in results:
-  print(row)
-'''
 
 connection.commit()
 connection.close()
