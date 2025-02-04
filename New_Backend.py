@@ -1,6 +1,7 @@
-from flask import Flask
-from socket import *
+from flask import Flask, render_template, jsonify, request
 import sqlite3
+import socket
+import threading
 def InSert(Nn, Time, AirT, AirH, SoilH, Light):
   cursor.execute('INSERT INTO BD_Plant (N, Time, AirTemperature_Ard, AirHumidity_Ard, SoilHumidity_Ard, Ligdt_Ard) VALUES (?, ?, ?, ?, ?, ?)', (Nn, Time, AirT, AirH, SoilH, Light))
 def SelecT(Num):
@@ -34,13 +35,30 @@ Ligdt_Ard REAL NOT NULL,
 connection.commit()
 connection.close()
 
-con = sqlite3.connect('BD_Plant')
-cur = con.cursor()
+def socket_listener():
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.bind(('0.0.0.0', 700))  # Здесь настраиваем порт
+    s.listen(5)
 
-sock = socket(AF_INET, SOCK_STREAM)
-sock.bind(("", 700))
 
-sock.listen(1)
+    while True:
+        conn, addr = s.accept()
+        data = conn.recv(1024).decode('utf-8')
+        if data:
+            InSert(data)
+        conn.close()
+
+# Запускаем сокет в отдельном потоке
+threading.Thread(target=socket_listener, daemon=True).start()
+
+@app.route('/data', methods=['GET'])
+def get_data():
+    conn = sqlite3.connect('data.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM data')
+    rows = cursor.fetchall()
+    conn.close()
+    return jsonify(rows)
 
 
 app = Flask('MMS')
@@ -48,19 +66,8 @@ if 'MMS'=='_main_':
     app.run(debug=True)
 
 
-while True:
-    conn, addr = sock.accept()
-    print('Connected by', addr)
-    while True:
-        data = conn.recv(1024)
-        if not data:
-            break
-        print('Received data:', data.decode())
-    conn.close()
-    break
 
-sock.close()
-con.close()
+
 
 
 
