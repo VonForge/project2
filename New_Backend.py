@@ -42,6 +42,12 @@ sock.bind(("", 700))
 
 sock.listen(1)
 
+
+app = Flask('MMS')
+if 'MMS'=='_main_':
+    app.run(debug=True)
+
+
 while True:
     conn, addr = sock.accept()
     print('Connected by', addr)
