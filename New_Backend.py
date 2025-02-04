@@ -61,9 +61,9 @@ def get_data():
     return jsonify(rows)
 
 
-app = Flask('MMS')
-if 'MMS'=='_main_':
-    app.run(debug=True)
+app = Flask('_main_')
+if '_main_'=='_main_':
+    app.run(debug=True, host='0.0.0.0',port=80)
 
 
 
