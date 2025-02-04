@@ -18,7 +18,6 @@ class Post(db.Model):
 @app.route('/main')
 @app.route('/')
 def m():
-    Ligt_Ard = '20'
     return render_template('index.html')
 
 @app.route('/acc')
