@@ -56,7 +56,11 @@ while True:
         if not data:
             break
         print('Received data:', data.decode())
+    conn.close()
+    break
 
+sock.close()
+con.close()
 
 
 
