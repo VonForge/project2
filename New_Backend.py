@@ -35,31 +35,6 @@ Ligdt_Ard REAL NOT NULL,
 connection.commit()
 connection.close()
 
-def socket_listener():
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.bind(('0.0.0.0', 700))  # Здесь настраиваем порт
-    s.listen(5)
-
-
-    while True:
-        conn, addr = s.accept()
-        data = conn.recv(1024).decode('utf-8')
-        if data:
-            InSert(data)
-        conn.close()
-
-# Запускаем сокет в отдельном потоке
-threading.Thread(target=socket_listener, daemon=True).start()
-
-@app.route('/data', methods=['GET'])
-def get_data():
-    conn = sqlite3.connect('data.db')
-    cursor = conn.cursor()
-    cursor.execute('SELECT * FROM data')
-    rows = cursor.fetchall()
-    conn.close()
-    return jsonify(rows)
-
 
 app = Flask('_main_')
 if '_main_'=='_main_':
